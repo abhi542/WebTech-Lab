@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="stddata.css"?>
+<!DOCTYPE html>
+<head>
+    <h1>STUDENTS' DATA</h1>
+</head>
+<style>
+    USN{
+        display: block;
+        margin-left: 10pt;
+        color:red;
+    }
+</style>
+
+<students>
+    <student>
+        <USN>1BY21IS001</USN>
+        <Name>Aaditya N</Name>
+        <College>BMSIT </College>
+    </student>
+
+    <student>
+        <USN>1BY21IS002</USN>
+        <Name>Aakula H</Name>
+        <College>BMSIT </College>
+    </student>
+
+    <student>
+        <USN>1BY21IS003</USN>
+        <Name>Aayush T</Name>
+        <College>BMSIT </College>
+    </student>
+</students>
+</html>

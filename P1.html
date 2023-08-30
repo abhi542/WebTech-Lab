@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calc</title>
+</head>
+<body>
+   <script>
+       function number(value){
+           document.cal.result.value+= value;
+       }
+
+       function cle(value){
+           document.cal.result.value=value;
+       }
+
+       function eval(value){
+           document.cal.value.result= eval(document.cal.result.value);
+       }
+   </script> 
+</body>
+<form name="cal">
+    <table>
+        <tr><td colspan="4">
+            <input type="text" name="result" disabled style="text-align: right;"></input>
+        </td></tr>
+        
+        <tr><td>
+            <button type="button" onclick="number(value)" value="1">1</button>
+            <button type="button" onclick="number(value)" value="2">2</button>
+            <button type="button" onclick="number(value)" value="3">3</button>
+            <button type="button" onclick="number(value)" value="+">+</button>
+        </td></tr>
+
+        <tr><td>
+            <button type="button" onclick="number(value)" value="4">4</button>
+            <button type="button" onclick="number(value)" value="5">5</button>
+            <button type="button" onclick="number(value)" value="6">6</button>
+            <button type="button" onclick="number(value)" value="-">-</button>
+        </td></tr>
+
+        <tr><td>
+            <button type="button" onclick="number(value)" value="7">7</button>
+            <button type="button" onclick="number(value)" value="8">8</button>
+            <button type="button" onclick="number(value)" value="9">9</button>
+            <button type="button" onclick="number(value)" value="*">*</button>
+        </td></tr>
+
+        <tr><td>
+            <button type="button" onclick="number(value)" value="0">0</button>
+            <button type="button" onclick="number(value)" value="/">/</button>
+            <button type="button" onclick="eval(value)" value="=">=</button>
+            <button type="button" onclick="number(value)" value=".">.</button>
+            <button type="button" onclick="cle(value)" value="">cl</button>
+        </td></tr>
+        
+    </table>
+</form>
+</html>
